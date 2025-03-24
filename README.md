@@ -18,7 +18,7 @@ This is a Book Recommendation System built using Python, Flask, and machine lear
 ## Deployment
 The application is deployed on **Render**. You can access it using the following link:
 
-[Book Recommendation System on Render]([https://your-app-url.onrender.com](https://book-recommendation-system-pil0.onrender.com/))
+[Book Recommendation System on Render]([https://your-app-url.onrender.com](https://book-recommendation-system-pil0.onrender.com/])
 
 ## Installation
 
