@@ -3,9 +3,8 @@
 This is a Book Recommendation System built using Python, Flask, and machine learning. It leverages **cosine similarity** and **K-Nearest Neighbors (KNN)** algorithms to recommend books based on user input.
 
 ## Features
-- Personalized book recommendations
-- Collaborative filtering using KNN
-- Content-based filtering using cosine similarity
+- Display Top 50 Most Popular Books
+- Book Recommendation Based on a User Input
 - Interactive and user-friendly web interface
 
 ## Technologies Used
