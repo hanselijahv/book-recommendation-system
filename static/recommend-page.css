@@ -4,9 +4,8 @@ body {
     text-align: center;
 }
 
-/* Custom scrollbar */
 html::-webkit-scrollbar {
-    width: 8px; /* Custom width for the page scrollbar */
+    width: 8px;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -132,31 +131,63 @@ html::-webkit-scrollbar-track {
     border: none;
 }
 
+.ui-menu-item:hover,
+.ui-menu-item .ui-menu-item-wrapper.ui-state-active {
+    transform: none !important;
+    box-shadow: none !important; /* Optional: Prevent shadow changes if applied */
+}
+
 .ui-autocomplete {
-    max-height: 200px;
-    overflow-y: auto;
+    max-height: 250px;
+    max-width: 500px;
+    overflow-y: hidden !important;
     overflow-x: hidden;
-    background-color: #1c1c1c;
-    font-size: 14px;
+    background-color: #2b323e;
     z-index: 1050;
-    width: inherit !important;
-}
-
-
-.ui-menu-item {
-    padding: 8px 15px;
-    color: black;
-    cursor: pointer;
-    white-space: nowrap;
-
-}
-
-.ui-menu-item:hover {
-    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     border: none;
 }
 
-.ui-autocomplete.ui-menu {
-    width: 500px !important;
-    max-width: none !important;
+.ui-menu-item {
+    text-align: left;
+    color: #ecf8ff;
+    font-size: 12px;
+    border: none !important;
 }
+
+.ui-widget.ui-widget-content {
+    border: none !important;
+}
+
+.ui-widget-content {
+    background-color: #2b323e !important;
+}
+
+.ui-menu {
+    background-color: #1d232a !important;
+    padding-left: 50px;
+}
+
+.ui-menu-item .ui-menu-item-wrapper .ui-state-default {
+    background-color: #2b323e !important;
+}
+
+.ui-menu-item .ui-menu-item-wrapper.ui-state-active {
+    background: #2b323e !important;
+    color: #ffffff !important;
+    border: none !important;
+}
+
+.ui-autocomplete::-webkit-scrollbar {
+    width: 8px;
+}
+
+.ui-autocomplete::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.ui-autocomplete::-webkit-scrollbar-track {
+    background: #2b323e;
+}
+

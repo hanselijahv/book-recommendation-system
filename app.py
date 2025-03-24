@@ -3,10 +3,10 @@ import pickle
 import numpy as np
 import os
 
-exports_folder = "exports"
+exports_folder = "data/models"
 
-popular_df = pickle.load(open(os.path.join(exports_folder, 'popular.pkl'), 'rb'))
-pt = pickle.load(open(os.path.join(exports_folder, 'pt.pkl'), 'rb'))
+popular_df = pickle.load(open(os.path.join(exports_folder, 'popular_books.pkl'), 'rb'))
+pt = pickle.load(open(os.path.join(exports_folder, 'pivot_table.pkl'), 'rb'))
 books = pickle.load(open(os.path.join(exports_folder, 'books.pkl'), 'rb'))
 collaborative_filtering = pickle.load(open(os.path.join(exports_folder, 'collaborative_filtering.pkl'), 'rb'))
 
@@ -78,8 +78,9 @@ def get_books():
 
     matching_books = [title for title in pt.index if query in title.lower()]
 
-    return jsonify(matching_books[:5])  # Limit to 5 suggestions
+    return jsonify(matching_books[:10])  # Limit to 5 suggestions
 
 if __name__ == '__main__':
-    from waitress import serve
-    serve(app, host='0.0.0.0', port=8000)
+    app.run(debug=True)
+    #from waitress import serve
+    #serve(app, host='0.0.0.0', port=8000)
