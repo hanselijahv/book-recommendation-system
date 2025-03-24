@@ -43,6 +43,7 @@ with st.sidebar:
     selected=option_menu(
         menu_title="Menu",
         options=["Home", "Recommend Books"],
+        menu_icon=[],
         icons=["house", "book"],
         default_index=0
     )
