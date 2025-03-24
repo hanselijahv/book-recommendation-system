@@ -2,6 +2,16 @@
 
 This is a Book Recommendation System built using Python, Flask, and machine learning. It leverages **cosine similarity** and **K-Nearest Neighbors (KNN)** algorithms to recommend books based on user input.
 
+## Table of Contents
+1. [Features](#features)
+2. [Technologies Used](#technologies-used)
+3. [Deployment](#deployment)
+4. [Installation](#installation)
+5. [Running the Application](#running-the-application)
+6. [Program Snapshots](#program-snapshots)
+7. [Contributing](#contributing)
+8. [Contact](#contact)
+
 ## Features
 - Display Top 50 Most Popular Books
 - Book Recommendation Based on a User Input
@@ -50,18 +60,16 @@ The application is deployed on **Render** and **Streamlit Community Cloud**. You
 2. Access the application at `http://localhost:8000`
 
 ## Program Snapshots
-Below are snapshots of the Book Recommendation System:
+Below are snapshots of the Book Recommendation System from Streamlit Community Cloud:
 
-**Home Page**
+**Home Page**  
 ![Home Page](snapshots/home.png)
 
-**Recommend Page**
+**Recommend Page**  
 ![Recommend Page](snapshots/recommend.png)
 
 ## Contributing
 Contributions are welcome! Feel free to fork this repository, submit pull requests, or raise issues for any improvements.
 
-
 ## Contact
 For any inquiries, contact [Hans Elijah Viduya](https://www.linkedin.com/in/hanselijahv/).
-
