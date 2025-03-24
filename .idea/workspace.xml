@@ -5,24 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f3acd10-0a23-49ed-97fd-f1119ebfb57d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_processing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/book_recsys.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/Books.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/input/Books.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/Ratings.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/input/Ratings.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/Users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/input/Users.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exports/books.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exports/collaborative_filtering.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exports/popular.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exports/pt.pkl" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/navbar-component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recommend.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/recommend-page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/home-page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/HomePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/RecommendPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/RecommendPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/NavBar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +166,7 @@
       <workItem from="1742831122067" duration="516000" />
       <workItem from="1742831653787" duration="202000" />
       <workItem from="1742831871517" duration="98000" />
-      <workItem from="1742831976243" duration="5394000" />
+      <workItem from="1742831976243" duration="5829000" />
     </task>
     <servers />
   </component>
