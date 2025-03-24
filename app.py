@@ -81,4 +81,5 @@ def get_books():
     return jsonify(matching_books[:5])  # Limit to 5 suggestions
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    from waitress import serve
+    serve(app, host='0.0.0.0', port=8000)
