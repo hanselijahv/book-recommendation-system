@@ -42,12 +42,12 @@ The application is deployed on **Render**. You can access it using the following
 
 ## Running the Application
 
-1. Start the Flask application using Gunicorn:
+1. Start the Flask application using Waitress:
     ```bash
-    gunicorn app:app
+    waitress-serve --listen=localhost:8000 app:app
     ```
 
-2. Access the application at `http://localhost:5000`
+2. Access the application at `http://localhost:8000`
 
 ## Usage
 - Enter a book title to receive personalized recommendations.
@@ -56,10 +56,7 @@ The application is deployed on **Render**. You can access it using the following
 ## Contributing
 Contributions are welcome! Feel free to fork this repository, submit pull requests, or raise issues for any improvements.
 
-## License
-This project is licensed under the MIT License.
 
 ## Contact
-For any inquiries, contact [Your Name](mailto:your-email@example.com).
+For any inquiries, contact [Hans Elijah Viduya](mailto:hanselijahv@gmail.com).
 
-Happy reading! 📚
