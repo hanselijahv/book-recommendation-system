@@ -60,7 +60,7 @@ The application is deployed on **Render** and **Streamlit Community Cloud**. You
 2. Access the application at `http://localhost:8000`
 
 ## Program Snapshots
-Below are snapshots of the Book Recommendation System from Streamlit Community Cloud:
+Below are snapshots of the Book Recommendation System deployed in Streamlit Community Cloud:
 
 **Home Page**  
 ![Home Page](snapshots/home.png)
