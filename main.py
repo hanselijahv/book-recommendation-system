@@ -48,7 +48,12 @@ with st.sidebar:
     )
 
 if selected == "Home":
-    st.header('Top 50 Popular Books')
+    st.markdown(
+        """
+        <h1 style='text-align: center;'>Top 50 Popular Books</h1>
+        """,
+        unsafe_allow_html=True
+    )
     top_books = fetch_popular_books()
 
     st.markdown(
@@ -100,7 +105,12 @@ if selected == "Home":
 
 
 elif selected == "Recommend Books":
-    st.header('Book Recommender System')
+    st.markdown(
+        """
+        <h1 style='text-align: center;'>Book Recommender System</h1>
+        """,
+        unsafe_allow_html=True
+    )
 
     book_names = pt.index.tolist()
 
