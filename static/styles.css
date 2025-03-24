@@ -32,9 +32,8 @@ html::-webkit-scrollbar-track {
     background: #222;
 }
 
-/* Card Styling */
 .card {
-    background: #2a333d;
+    background: #20272f;
     padding: 15px;
     border-radius: 3px;
     text-align: center;
