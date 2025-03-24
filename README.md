@@ -49,9 +49,14 @@ The application is deployed on **Render** and **Streamlit Community Cloud**. You
 
 2. Access the application at `http://localhost:8000`
 
-## Usage
-- Enter a book title to receive personalized recommendations.
-- Browse through suggested books with relevant information like author names and cover images.
+## Program Snapshots
+Below are snapshots of the Book Recommendation System:
+
+**Home Page**
+![Home Page](snapshots/home.png)
+
+**Recommend Page**
+![Recommend Page](snapshots/recommend.png)
 
 ## Contributing
 Contributions are welcome! Feel free to fork this repository, submit pull requests, or raise issues for any improvements.
