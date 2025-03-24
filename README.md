@@ -47,7 +47,7 @@ The application is deployed on **Render**. You can access it using the following
     gunicorn app:app
     ```
 
-2. Access the application at `http://localhost:8000`
+2. Access the application at `http://localhost:5000`
 
 ## Usage
 - Enter a book title to receive personalized recommendations.
