@@ -1,0 +1,164 @@
+body {
+    background-color: #1d232a;
+    color: white;
+    text-align: center;
+}
+
+/* Custom scrollbar */
+html::-webkit-scrollbar {
+    width: 8px; /* Custom width for the page scrollbar */
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background: #222;
+}
+
+.title {
+    padding-top: 3rem;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.container {
+    padding-top: 100px;
+}
+
+.form-control {
+    max-width: 500px;
+    margin: auto;
+    border-radius: 8px;
+    padding: 12px 20px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    border: none;
+}
+
+.btn-warning {
+    border-radius: 8px;
+    padding: 12px 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-warning:hover {
+    background-color: #ffcc00;
+    color: black;
+}
+
+.book-card {
+    background: #222;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.2);
+}
+
+.book-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.book-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.book-author {
+    font-size: 16px;
+    color: #bbb;
+}
+
+.error-message {
+    color: #ff4c4c;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.recommendation-title {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-content: center;
+    max-width: 80%;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.suggestion-box {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #222;
+    color: white;
+    position: absolute;
+    max-width: 500px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.suggestion-box li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #444;
+}
+
+.suggestion-box li:hover {
+    background: #333;
+}
+
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #1c1c1c;
+    font-size: 14px;
+    z-index: 1050;
+    width: inherit !important;
+}
+
+
+.ui-menu-item {
+    padding: 8px 15px;
+    color: black;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+
+.ui-menu-item:hover {
+    background-color: #333;
+}
+
+.ui-autocomplete.ui-menu {
+    width: 500px !important;
+    max-width: none !important;
+}

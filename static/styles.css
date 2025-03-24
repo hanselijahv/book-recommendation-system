@@ -1,0 +1,87 @@
+html, body {
+    background: #1d232a;
+    height: 100%;
+    margin: 0;
+    overflow-y: auto; /* Allows scrolling on the whole page */
+}
+
+
+/* Scrollable content container */
+.container {
+    position: absolute;
+    top: 80px; /* Pushes below the navbar */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    margin: auto;
+    max-height: calc(100vh - 70px); /* Limits the container height */
+}
+
+/* Custom scrollbar */
+html::-webkit-scrollbar {
+    width: 8px; /* Custom width for the page scrollbar */
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background: #222;
+}
+
+/* Card Styling */
+.card {
+    background: #2a333d;
+    padding: 15px;
+    border-radius: 3px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0, 0.1);
+    transition: 0.3s;
+    height: 500px; /* Fixed card height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%; /* Ensures full width */
+    height: 250px; /* Taller rectangular image */
+    object-fit: cover; /* Maintains aspect ratio without stretching */
+    border-radius: 8px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.title {
+    font-size: 1.2rem; /* Bigger title */
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px; /* More space below title */
+}
+
+.book-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Equal spacing between attributes */
+}
+
+.text-white {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #bbb;
+}
