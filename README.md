@@ -58,5 +58,5 @@ Contributions are welcome! Feel free to fork this repository, submit pull reques
 
 
 ## Contact
-For any inquiries, contact [Hans Elijah Viduya](mailto:hanselijahv@gmail.com).
+For any inquiries, contact [Hans Elijah Viduya](https://www.linkedin.com/in/hanselijahv/).
 
