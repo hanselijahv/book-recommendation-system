@@ -53,9 +53,10 @@ This is a Book Recommendation System built using Python, Flask, and machine lear
 Access the application at `http://localhost:8000`
 
 2. Second Option (Streamlit):
-   ```bash
+    ```bash
     streamlit run main.py
     ```
+    
 ## Program Snapshots
 Below are snapshots of the Book Recommendation System deployed in Streamlit Community Cloud:
 
