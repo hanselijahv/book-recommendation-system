@@ -46,13 +46,16 @@ This is a Book Recommendation System built using Python, Flask, and machine lear
 
 ## Running the Application
 
-1. Start the Flask application using Waitress:
+1. First Option (Waitress):
     ```bash
     waitress-serve --listen=localhost:8000 app:app
     ```
+Access the application at `http://localhost:8000`
 
-2. Access the application at `http://localhost:8000`
-
+2. Second Option (Streamlit):
+   ```bash
+    streamlit run main.py
+    ```
 ## Program Snapshots
 Below are snapshots of the Book Recommendation System deployed in Streamlit Community Cloud:
 
