@@ -58,7 +58,7 @@ Access the application at `http://localhost:8000`
     ```
     
 ## Program Snapshots
-Below are snapshots of the Book Recommendation System deployed in Streamlit Community Cloud:
+Below are snapshots of the Book Recommendation System (Streamlit):
 
 **Home Page**  
 ![Home Page](snapshots/home.png)
