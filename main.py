@@ -11,13 +11,15 @@ pt = pickle.load(open(os.path.join(exports_folder, 'pivot_table.pkl'), 'rb'))
 books = pickle.load(open(os.path.join(exports_folder, 'books.pkl'), 'rb'))
 collaborative_filtering = pickle.load(open(os.path.join(exports_folder, 'collaborative_filtering.pkl'), 'rb'))
 
+
 def recommend_books(book_name, num_recommendations=10):
     try:
         if book_name not in pt.index:
             return []
 
         index = pt.index.get_loc(book_name)
-        similar_items = sorted(list(enumerate(collaborative_filtering[index])), key=lambda x: x[1], reverse=True)[1:num_recommendations+1]
+        similar_items = sorted(list(enumerate(collaborative_filtering[index])), key=lambda x: x[1], reverse=True)[
+                        1:num_recommendations + 1]
 
         data = []
         for i in similar_items:
@@ -36,11 +38,13 @@ def recommend_books(book_name, num_recommendations=10):
     except Exception as e:
         return str(e)
 
+
 def fetch_popular_books():
     return popular_df.head(50)[['Book-Title', 'Book-Author', 'Image-URL-L', 'avg_rating', 'num_ratings']]
 
+
 with st.sidebar:
-    selected=option_menu(
+    selected = option_menu(
         menu_title="Menu",
         options=["Home", "Recommend Books"],
         menu_icon=[],
@@ -65,8 +69,9 @@ if selected == "Home":
             padding: 10px;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Center content horizontally */
-            justify-content: center; /* Center content vertically */
+            align-items: center; 
+            justify-content: center;
+            width: 150px;
         }
         .book-container img {
             border-radius: 10px;
@@ -79,7 +84,12 @@ if selected == "Home":
             font-size: 14px !important;
             margin-top: 10px !important;
             text-align: center;
-            max-width: 150px;
+            height: 40px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
         }
         .book-author, .book-rating {
             font-size: 12px !important;
@@ -129,15 +139,25 @@ elif selected == "Recommend Books":
             st.markdown(
                 """
                 <style>
+                    .book-cover {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center; 
+                        justify-content: center;
+                        margin-bottom: 20px;
+                    }
                     .book-cover img {
                         height: 250px; 
+                        width: 150px;
                         object-fit: cover; 
                         border-radius: 3px; 
                     }
                     .book-title {
                         text-align: center; 
-                        margin-top: 100px;
-                        font-size: 12px !important; /* Adjust font size here */
+                        font-size: 12px !important;
+                        margin-top: 10px;
+                        max-width: 150px;
+                        word-wrap: break-word;
                     }
                 </style>
                 """,
@@ -154,9 +174,8 @@ elif selected == "Recommend Books":
                             st.markdown(f"""
                                 <div class="book-cover">
                                     <img src="{item[2]}" alt="{item[0]}" />
+                                    <p class="book-title">{item[0]}</p>
                                 </div>
-                                <p class="book-title">{item[0]}</p>
                             """, unsafe_allow_html=True)
         else:
             st.error("No similar books found. Try another title.")
-
