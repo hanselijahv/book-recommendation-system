@@ -24,12 +24,6 @@ This is a Book Recommendation System built using Python, Flask, and machine lear
 - **Scikit-Learn** for implementing KNN and cosine similarity
 - **Gunicorn** for production deployment
 
-## Deployment
-The application is deployed on **Render** and **Streamlit Community Cloud**. You can access it using the following links:
-
-- [Book Recommendation System on Render](https://book-recommendation-system-pil0.onrender.com/)
-- [Book Recommendation System on Streamlit](https://hanselijahv-bookrecsys.streamlit.app/)
-
 ## Installation
 
 1. Clone the repository:
